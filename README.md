@@ -16,7 +16,7 @@ The API is basically the same as [https://github.com/pbhogan/scrypt](), so it's 
 ### Installation
 #### Gem
 ```shell
-gem install scrypt-ruby
+gem install scrypt-ruby -P MediumSecurity
 ```
 
 #### Bundler
