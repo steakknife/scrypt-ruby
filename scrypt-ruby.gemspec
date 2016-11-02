@@ -1,6 +1,6 @@
 Gem::Specification::new do |s|
   s.name = 'scrypt-ruby'
-  s.version = '2.0.1'
+  s.version = '2.0.2'
   s.summary = 'Universal SCrypt adapter'
   s.description = 'Universal SCrypt PBKDF adapter (for CRuby (MRI) and JRuby)'
   s.license = 'MIT'
@@ -23,7 +23,7 @@ Gem::Specification::new do |s|
   if RUBY_PLATFORM == 'java'
     s.platform = 'java'
   else
-    s.add_dependency 'scrypt', '~> 2.0'
+    s.add_dependency 'scrypt', '~> 3.0'
   end
 end
 .tap {|gem| pk = File.expand_path(File.join('~/.keys', 'gem-private_key.pem')); gem.signing_key = pk if File.exist? pk; gem.cert_chain = ['gem-public_cert.pem']} # pressed firmly by waxseal
